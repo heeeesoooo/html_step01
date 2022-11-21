@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 우선순위 div<class<id */
+        #id {
+            color: blue;
+            padding: 100px;
+            box-sizing: border-box;
+            /* 박스사이즈를 볼더 안으로 나둠 */
+        }
+
+        .class {
+            color: yellow;
+        }
+
+        div {
+            color: red;
+            background-color: #ddd;
+            width: 1200px;
+            border: 1px dotted #333;
+            /* solid:실선 dashed:굵은선 dotted:점선*/
+            margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="id" class="class">selector01</div>
+    <div class="class">selector01</div>
+    <div>selector01</div>
+    <div>selector01</div>
+    <div>selector01</div>
+</body>
+
+</html>
